@@ -1,17 +1,13 @@
-import React from 'react';
+'use client';
 
-const HomePage = () => {
-    return (
-        <div>
-            <h1>Welcome to Our E-commerce Store!</h1>
-            <h2>Featured Products</h2>
-            <ul>
-                <li>Product 1</li>
-                <li>Product 2</li>
-                <li>Product 3</li>
-            </ul>
-        </div>
-    );
-};
-
-export default HomePage;
+export default function Home() {
+  return (
+    <div style={{ padding: '40px' }}>
+      <h1>Welcome to Online Store</h1>
+      <p>Shop our amazing products</p>
+      <a href="/products" style={{ padding: '10px 20px', backgroundColor: '#28a745', color: 'white', textDecoration: 'none', borderRadius: '5px', display: 'inline-block' }}>
+        Shop Now
+      </a>
+    </div>
+  );
+}
